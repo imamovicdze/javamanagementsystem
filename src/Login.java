@@ -65,6 +65,12 @@ public class Login extends javax.swing.JFrame {
         lbl_password.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbl_password.setText("Password");
 
+        txt_username.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_usernameKeyPressed(evt);
+            }
+        });
+
         lbl_username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbl_username.setText("Username");
 
@@ -73,6 +79,12 @@ public class Login extends javax.swing.JFrame {
         btn_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_loginActionPerformed(evt);
+            }
+        });
+
+        txt_password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_passwordKeyPressed(evt);
             }
         });
 
@@ -215,6 +227,42 @@ public class Login extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_c_show_passwordActionPerformed
+
+    private void txt_usernameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_usernameKeyPressed
+        
+        if (txt_username.getText().isEmpty()) {
+            
+            txt_username.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                txt_password.requestFocus();
+              
+            }
+        }
+    }//GEN-LAST:event_txt_usernameKeyPressed
+
+    private void txt_passwordKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_passwordKeyPressed
+        
+        if (String.valueOf(txt_password.getPassword()).equals("")) {
+        
+            txt_password.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                btn_login.doClick();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_passwordKeyPressed
 
     /**
      * @param args the command line arguments
