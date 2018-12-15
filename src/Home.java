@@ -198,7 +198,7 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbl_logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Employees.png")); // NOI18N
+        lbl_logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Employees.png"))); // NOI18N
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Person Info", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 24), new java.awt.Color(0, 102, 153))); // NOI18N
 
@@ -341,7 +341,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btn_print.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\print-icon.png")); // NOI18N
+        btn_print.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/print-icon.png"))); // NOI18N
         btn_print.setText("Print");
         btn_print.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,7 +351,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Operations", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 24), new java.awt.Color(0, 102, 153))); // NOI18N
 
-        btn_save.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\save-icon.png")); // NOI18N
+        btn_save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save-icon.png"))); // NOI18N
         btn_save.setText("Save");
         btn_save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -359,7 +359,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btn_update.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Pencil-icon.png")); // NOI18N
+        btn_update.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Pencil-icon.png"))); // NOI18N
         btn_update.setText("Update");
         btn_update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -367,7 +367,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btn_delete.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Actions-dialog-cancel-icon.png")); // NOI18N
+        btn_delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Button-Close-icon.png"))); // NOI18N
         btn_delete.setText("Delete");
         btn_delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -375,7 +375,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        btn_clear.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Actions-edit-clear-icon.png")); // NOI18N
+        btn_clear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Actions-edit-clear-icon.png"))); // NOI18N
         btn_clear.setText("Clear");
         btn_clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -433,7 +433,7 @@ public class Home extends javax.swing.JFrame {
 
         lbl_welcome1.setText("Easily manage with your directory");
 
-        btn_attach.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Editing-Attach-icon.png")); // NOI18N
+        btn_attach.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Editing-Attach-icon.png"))); // NOI18N
         btn_attach.setText("Attach image");
         btn_attach.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -443,7 +443,7 @@ public class Home extends javax.swing.JFrame {
 
         lbl_persons.setText("Total Persons");
 
-        btn_logout.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\User-Interface-Logout-icon.png")); // NOI18N
+        btn_logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User-Interface-Logout-icon.png"))); // NOI18N
         btn_logout.setText("Logout");
         btn_logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -451,6 +451,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        btn_show.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Eye-2-icon.png"))); // NOI18N
         btn_show.setText("Show");
         btn_show.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -491,11 +492,11 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        image.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\img.png")); // NOI18N
+        image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img.png"))); // NOI18N
 
         menu_file.setText("File");
 
-        menu_item_exit.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Button-Close-icon.png")); // NOI18N
+        menu_item_exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Actions-dialog-cancel-icon.png"))); // NOI18N
         menu_item_exit.setText("Exit");
         menu_item_exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -508,7 +509,7 @@ public class Home extends javax.swing.JFrame {
 
         menu_help.setText("Help");
 
-        menu_item_faq.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\FAQ-icon.png")); // NOI18N
+        menu_item_faq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/FAQ-icon.png"))); // NOI18N
         menu_item_faq.setText("FAQ");
         menu_item_faq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -568,7 +569,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(image)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 276, Short.MAX_VALUE)
+                                .addGap(18, 18, Short.MAX_VALUE)
                                 .addComponent(btn_logout))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(88, 88, 88)
@@ -595,7 +596,7 @@ public class Home extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(image))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btn_show)
                                     .addComponent(txt_count, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

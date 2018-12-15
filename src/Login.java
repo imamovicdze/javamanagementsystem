@@ -57,10 +57,10 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 0)), "Admin Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 24), new java.awt.Color(255, 0, 51))); // NOI18N
 
-        icon_padlock.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Security-Password-2-icon.png")); // NOI18N
+        icon_padlock.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Key-3-icon.png"))); // NOI18N
         icon_padlock.setMaximumSize(new java.awt.Dimension(301, 256));
 
-        icon_key.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\Key-3-icon.png")); // NOI18N
+        icon_key.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Security-Password-2-icon.png"))); // NOI18N
 
         lbl_password.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbl_password.setText("Password");
@@ -74,7 +74,7 @@ public class Login extends javax.swing.JFrame {
         lbl_username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbl_username.setText("Username");
 
-        btn_login.setIcon(new javax.swing.ImageIcon("C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\images\\User-Interface-Login-icon.png")); // NOI18N
+        btn_login.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User-Interface-Login-icon.png"))); // NOI18N
         btn_login.setText("Login");
         btn_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

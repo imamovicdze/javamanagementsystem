@@ -27,7 +27,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="284" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -104,7 +104,7 @@
         <Component class="javax.swing.JLabel" name="lbl_circles">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\loading1.gif"/>
+              <Image iconType="3" name="/images/loading1.gif"/>
             </Property>
           </Properties>
         </Component>
@@ -121,7 +121,7 @@
         <Component class="javax.swing.JLabel" name="lbl_icon">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Employees.png"/>
+              <Image iconType="3" name="/images/Employees.png"/>
             </Property>
           </Properties>
         </Component>

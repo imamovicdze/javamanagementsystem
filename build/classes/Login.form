@@ -145,7 +145,7 @@
         <Component class="javax.swing.JLabel" name="icon_padlock">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Security-Password-2-icon.png"/>
+              <Image iconType="3" name="/images/Key-3-icon.png"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[301, 256]"/>
@@ -155,7 +155,7 @@
         <Component class="javax.swing.JLabel" name="icon_key">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Key-3-icon.png"/>
+              <Image iconType="3" name="/images/Security-Password-2-icon.png"/>
             </Property>
           </Properties>
         </Component>
@@ -183,7 +183,7 @@
         <Component class="javax.swing.JButton" name="btn_login">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\User-Interface-Login-icon.png"/>
+              <Image iconType="3" name="/images/User-Interface-Login-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Login"/>
           </Properties>

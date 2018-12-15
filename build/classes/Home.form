@@ -14,7 +14,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="menu_item_exit">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Button-Close-icon.png"/>
+                  <Image iconType="3" name="/images/Actions-dialog-cancel-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Exit"/>
               </Properties>
@@ -32,7 +32,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="menu_item_faq">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\FAQ-icon.png"/>
+                  <Image iconType="3" name="/images/FAQ-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="FAQ"/>
               </Properties>
@@ -126,7 +126,7 @@
                       <Component id="image" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace type="separate" pref="276" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
                               <Component id="btn_logout" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
@@ -163,7 +163,7 @@
                                   </Group>
                                   <Component id="image" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="8" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btn_show" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txt_count" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -197,7 +197,7 @@
     <Component class="javax.swing.JLabel" name="lbl_logo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Employees.png"/>
+          <Image iconType="3" name="/images/Employees.png"/>
         </Property>
       </Properties>
     </Component>
@@ -480,7 +480,7 @@
     <Component class="javax.swing.JButton" name="btn_print">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\print-icon.png"/>
+          <Image iconType="3" name="/images/print-icon.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Print"/>
       </Properties>
@@ -536,7 +536,7 @@
         <Component class="javax.swing.JButton" name="btn_save">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\save-icon.png"/>
+              <Image iconType="3" name="/images/save-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Save"/>
           </Properties>
@@ -547,7 +547,7 @@
         <Component class="javax.swing.JButton" name="btn_update">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Pencil-icon.png"/>
+              <Image iconType="3" name="/images/Pencil-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Update"/>
           </Properties>
@@ -558,7 +558,7 @@
         <Component class="javax.swing.JButton" name="btn_delete">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Actions-dialog-cancel-icon.png"/>
+              <Image iconType="3" name="/images/Button-Close-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Delete"/>
           </Properties>
@@ -569,7 +569,7 @@
         <Component class="javax.swing.JButton" name="btn_clear">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Actions-edit-clear-icon.png"/>
+              <Image iconType="3" name="/images/Actions-edit-clear-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Clear"/>
           </Properties>
@@ -619,7 +619,7 @@
     <Component class="javax.swing.JButton" name="btn_attach">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\Editing-Attach-icon.png"/>
+          <Image iconType="3" name="/images/Editing-Attach-icon.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Attach image"/>
       </Properties>
@@ -635,7 +635,7 @@
     <Component class="javax.swing.JButton" name="btn_logout">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\User-Interface-Logout-icon.png"/>
+          <Image iconType="3" name="/images/User-Interface-Logout-icon.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Logout"/>
       </Properties>
@@ -645,6 +645,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_show">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/images/Eye-2-icon.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Show"/>
       </Properties>
       <Events>
@@ -711,7 +714,7 @@
     <Component class="javax.swing.JLabel" name="image">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Admin\Documents\NetBeansProjects\Management System\images\img.png"/>
+          <Image iconType="3" name="/images/img.png"/>
         </Property>
       </Properties>
     </Component>
