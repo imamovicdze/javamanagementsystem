@@ -214,23 +214,58 @@ public class Home extends javax.swing.JFrame {
         lbl_gender.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_gender.setText("Gender");
 
+        txt_shift.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_shiftKeyPressed(evt);
+            }
+        });
+
+        txt_gp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_gpKeyPressed(evt);
+            }
+        });
+
         lbl_department.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_department.setText("Department");
+
+        txt_department.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_departmentKeyPressed(evt);
+            }
+        });
 
         txt_name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_nameActionPerformed(evt);
             }
         });
+        txt_name.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_nameKeyPressed(evt);
+            }
+        });
 
         lbl_gp.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_gp.setText("GP");
+
+        txt_surname.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_surnameKeyPressed(evt);
+            }
+        });
 
         lbl_shift.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_shift.setText("Shift");
 
         lbl_division.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_division.setText("Division");
+
+        txt_division.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_divisionKeyPressed(evt);
+            }
+        });
 
         lbl_surname.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lbl_surname.setText("Surname");
@@ -1095,6 +1130,114 @@ public class Home extends javax.swing.JFrame {
     private void c_ageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_ageActionPerformed
 
     }//GEN-LAST:event_c_ageActionPerformed
+
+    private void txt_nameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_nameKeyPressed
+
+        if (txt_name.getText().isEmpty()) {
+        
+            txt_name.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                txt_surname.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_nameKeyPressed
+
+    private void txt_surnameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_surnameKeyPressed
+        
+        if (txt_surname.getText().isEmpty()) {
+        
+            txt_surname.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                c_age.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_surnameKeyPressed
+
+    private void txt_departmentKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_departmentKeyPressed
+        
+        if (txt_department.getText().isEmpty()) {
+        
+            txt_department.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                txt_shift.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_departmentKeyPressed
+
+    private void txt_shiftKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_shiftKeyPressed
+        
+        if (txt_shift.getText().isEmpty()) {
+        
+            txt_shift.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                txt_gp.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_shiftKeyPressed
+
+    private void txt_gpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_gpKeyPressed
+        
+        if (txt_gp.getText().isEmpty()) {
+        
+            txt_gp.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                txt_division.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_gpKeyPressed
+
+    private void txt_divisionKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_divisionKeyPressed
+        
+        if (txt_division.getText().isEmpty()) {
+        
+            txt_division.requestFocus();
+            
+        } else {
+            
+            int key = evt.getKeyCode();
+            
+            if (key == 10) {
+                
+                btn_attach.requestFocus();
+                
+            }
+        }
+    }//GEN-LAST:event_txt_divisionKeyPressed
 
     /**
      * @param args the command line arguments

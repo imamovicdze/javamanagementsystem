@@ -345,8 +345,14 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_shift">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_shiftKeyPressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_gp">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_gpKeyPressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_department">
           <Properties>
@@ -357,10 +363,14 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_department">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_departmentKeyPressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_name">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_nameActionPerformed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_nameKeyPressed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_gp">
@@ -372,6 +382,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_surname">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_surnameKeyPressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_shift">
           <Properties>
@@ -390,6 +403,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_division">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_divisionKeyPressed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lbl_surname">
           <Properties>
