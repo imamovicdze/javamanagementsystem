@@ -666,7 +666,7 @@ public class Home extends javax.swing.JFrame {
        
         try {
             
-            Runtime.getRuntime().exec("rundll32 url.dll, FileProtocolHandler " + "C:\\Users\\Admin\\Documents\\NetBeansProjects\\Management System\\about_software.pdf");
+            Runtime.getRuntime().exec("rundll32 url.dll, FileProtocolHandler " + "C:\\Users\\Admin\\Documents\\NetBeansProjects\\javamanagementsystem\\about_software.pdf");
             
         } catch (IOException e) {
             
@@ -918,6 +918,29 @@ public class Home extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
 
             }
+            
+            try {
+            
+            
+            File update_image  = new File(filename);
+            FileInputStream finputs = new FileInputStream(update_image);
+            byte[] image = new byte[(int) update_image.length()];
+            finputs.read(image);
+            
+            String sql10 = "update user_info SET image = ? where id = '" + val1 + "' ";
+            
+            pst = conn.prepareStatement(sql10);
+            pst.setBytes(1, image);
+            pst.executeUpdate();
+            
+            rs.close();
+            pst.close();
+            
+        } catch (IOException | SQLException e) {
+            
+            JOptionPane.showMessageDialog(null, e);
+            
+        }
             
             finally {
 

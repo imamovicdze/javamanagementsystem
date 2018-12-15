@@ -7,7 +7,7 @@ public class Connect {
     
     public static Connection getCon() {
         
-        try {
+      /*  try {
             
             Class.forName("java.sql.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/management", "root", "");
@@ -20,5 +20,21 @@ public class Connect {
                 return null;
                 
         }
-    }
+    } */
+      
+          
+        try {
+            
+            Class.forName("org.sqlite.JDBC");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Admin\\Documents\\NetBeansProjects\\javamanagementsystem\\db\\management.sqlite");
+            
+            return conn;
+            
+        } catch (ClassNotFoundException | SQLException e) {
+            
+            JOptionPane.showMessageDialog(null, e);
+            return null;
+            
+        }
+    }   
 }
