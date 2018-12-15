@@ -7,4 +7,4 @@ External libraries that I use for this app is:
 * rs2xml.jar
 
 
-This application is written in Java using JDK 8, NetBeans 8.2 also support and SQL database. You should import database manually.
+This application is written in Java using JDK 8, NetBeans 8.2 also support and SQLite database. 
