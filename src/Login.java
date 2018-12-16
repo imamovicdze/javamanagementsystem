@@ -174,43 +174,50 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
-       
-        String sql = "SELECT * FROM user_info WHERE username = ? AND password = ?";
         
-        try {
+        if (txt_username.getText().isEmpty()) {
             
-            pst = conn.prepareStatement(sql);
-            pst.setString(1, txt_username.getText());
-            pst.setString(2, txt_password.getText());
-            rs = pst.executeQuery();
+            txt_username.requestFocus();
             
-            if (rs.next()) {
-                setVisible(false);
-                Loading ob = new Loading();
-                ob.setUpLoading();
-                ob.setVisible(true);
-                rs.close();
-                pst.close();
-                
-            } else {
-                
-                JOptionPane.showMessageDialog(null, "Incorrect  Credential");
-                
-            }
+        } else {
             
-        } catch (HeadlessException | SQLException e) {
-            
-            JOptionPane.showMessageDialog(null,e);
-            
-        } finally {
-            
+            String sql = "SELECT * FROM user_info WHERE username = ? AND password = ?";
+
             try {
-                
-                rs.close();
-                pst.close();
-                
-            } catch (SQLException E) {
-        
+
+                pst = conn.prepareStatement(sql);
+                pst.setString(1, txt_username.getText());
+                pst.setString(2, txt_password.getText());
+                rs = pst.executeQuery();
+
+                if (rs.next()) {
+                    setVisible(false);
+                    Loading ob = new Loading();
+                    ob.setUpLoading();
+                    ob.setVisible(true);
+                    rs.close();
+                    pst.close();
+
+                } else {
+
+                    JOptionPane.showMessageDialog(null, "Incorrect  Credential");
+
+                }
+
+            } catch (HeadlessException | SQLException e) {
+
+                JOptionPane.showMessageDialog(null,e);
+
+            } finally {
+
+                try {
+
+                    rs.close();
+                    pst.close();
+
+                } catch (SQLException E) {
+
+                }
             }
         }
     }//GEN-LAST:event_btn_loginActionPerformed

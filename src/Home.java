@@ -765,52 +765,79 @@ public class Home extends javax.swing.JFrame {
 
     private void btn_saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_saveActionPerformed
         
-        int x = JOptionPane.showConfirmDialog(null, "Are you sure you want to add this person?" , 
-                "Adding employee", JOptionPane.YES_NO_OPTION);
-         
-        if (x == 0) {
+        if (txt_name.getText().isEmpty()) {
             
-            try {
-                
-                String sql = "INSERT INTO user_info (name, surname, age, image, gender, "
-                        + "department, shift, emploee_egp, division) VALUES (?,?,?,?,?,?,?,?,?)";
-
-                pst = conn.prepareStatement(sql);
-
-                pst.setString(1, txt_name.getText());
-                pst.setString(2, txt_surname.getText());
-
-                String stringAge = c_age.getSelectedItem().toString();
-                int intAge = Integer.parseInt(stringAge);
-                pst.setInt(3, intAge);
-                
-                pst.setBytes(4, person_image);
-                pst.setString(5, gender);
-                pst.setString(6, txt_department.getText());
-                pst.setString(7, txt_shift.getText());
-                pst.setString(8, txt_gp.getText());
-                pst.setString(9, txt_division.getText());
-                
-                pst.execute();
-
-                JOptionPane.showMessageDialog(null, "Data is saved successfully");
+            txt_name.requestFocus();
             
-            } catch (HeadlessException | NumberFormatException | SQLException e) {
-
-                JOptionPane.showMessageDialog(null, e);
-
-            }
+        } else if (txt_surname.getText().isEmpty()) {
             
-            finally {
+            txt_surname.requestFocus();
             
+        } else if (txt_department.getText().isEmpty()) {
+            
+            txt_department.requestFocus();
+            
+        } else if (txt_shift.getText().isEmpty()) {
+            
+            txt_shift.requestFocus();
+            
+        } else if (txt_gp.getText().isEmpty()) {
+            
+            txt_gp.requestFocus();
+            
+        } else if (txt_division.getText().isEmpty()) {
+            
+            txt_division.requestFocus();
+            
+        } else {
+            
+            int x = JOptionPane.showConfirmDialog(null, "Are you sure you want to add this person?" , 
+                    "Adding employee", JOptionPane.YES_NO_OPTION);
+
+            if (x == 0) {
+
                 try {
 
-                    rs.close();
-                    pst.close();
+                    String sql = "INSERT INTO user_info (name, surname, age, image, gender, "
+                            + "department, shift, emploee_egp, division) VALUES (?,?,?,?,?,?,?,?,?)";
 
-                } catch (SQLException e) {  
+                    pst = conn.prepareStatement(sql);
 
-                  }   
+                    pst.setString(1, txt_name.getText());
+                    pst.setString(2, txt_surname.getText());
+
+                    String stringAge = c_age.getSelectedItem().toString();
+                    int intAge = Integer.parseInt(stringAge);
+                    pst.setInt(3, intAge);
+
+                    pst.setBytes(4, person_image);
+                    pst.setString(5, gender);
+                    pst.setString(6, txt_department.getText());
+                    pst.setString(7, txt_shift.getText());
+                    pst.setString(8, txt_gp.getText());
+                    pst.setString(9, txt_division.getText());
+
+                    pst.execute();
+
+                    JOptionPane.showMessageDialog(null, "Data is saved successfully");
+
+                } catch (HeadlessException | NumberFormatException | SQLException e) {
+
+                    JOptionPane.showMessageDialog(null, e);
+
+                }
+
+                finally {
+
+                    try {
+
+                        rs.close();
+                        pst.close();
+
+                    } catch (SQLException e) {  
+
+                    }   
+                }
             }
         }
         
