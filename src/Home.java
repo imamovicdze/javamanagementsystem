@@ -9,6 +9,7 @@
  * @author imamovicdze
  */
 
+import com.sun.glass.events.KeyEvent;
 import java.awt.Color;
 import java.awt.HeadlessException;
 import java.awt.Image;
@@ -218,11 +219,17 @@ public class Home extends javax.swing.JFrame {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_shiftKeyPressed(evt);
             }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_shiftKeyTyped(evt);
+            }
         });
 
         txt_gp.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_gpKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_gpKeyTyped(evt);
             }
         });
 
@@ -1238,6 +1245,30 @@ public class Home extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_txt_divisionKeyPressed
+
+    private void txt_shiftKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_shiftKeyTyped
+        
+        char c = evt.getKeyChar();
+        
+        if (!(Character.isDigit(c) || c == KeyEvent.VK_BACKSPACE || c == KeyEvent.VK_DELETE)) {
+            
+            getToolkit().beep();
+            evt.consume();
+            
+        }
+    }//GEN-LAST:event_txt_shiftKeyTyped
+
+    private void txt_gpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_gpKeyTyped
+            
+        char c = evt.getKeyChar();
+        
+        if (!(Character.isDigit(c) || c == KeyEvent.VK_BACKSPACE || c == KeyEvent.VK_DELETE)) {
+            
+            getToolkit().beep();
+            evt.consume();
+            
+        }
+    }//GEN-LAST:event_txt_gpKeyTyped
 
     /**
      * @param args the command line arguments
